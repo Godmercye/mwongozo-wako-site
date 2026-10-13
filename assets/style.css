@@ -32,3 +32,11 @@ footer.site { max-width:900px; margin:0 auto; padding:8px 16px 32px; }
 footer.site a { margin-right:14px; }
 /* language toggle: with JS, show only the chosen language; without JS both show */
 html[data-lang="sw"] [lang="en"].l, html[data-lang="en"] [lang="sw"].l { display:none; }
+.skip { position:absolute; left:-999px; top:0; background:var(--gold); color:var(--navy); padding:8px 14px; font-weight:700; z-index:10; }
+.skip:focus { left:8px; top:8px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid var(--gold); outline-offset:2px; }
+@media print {
+  header.site, .hero .btn, .langswitch, .skip { display:none; }
+  body { background:#fff; color:#000; } section, .card { border:0; padding:0; }
+  a { color:#000; }
+}
