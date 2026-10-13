@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://godmercye.github.io/mwongozo-wako-site/sitemap.xml
